@@ -1,0 +1,526 @@
+@font-face {
+    font-family: "JNR Gothic";
+    src: url("fonts/JNRfont_n.ttf");
+}
+
+.Ekimei{
+    width: fit-content;
+    min-width: 200px;
+    border: 1px black solid;
+    margin-bottom: 15px;
+}
+
+.Ekimei h1{
+    margin: 0;
+    padding: 5px;
+    font-family: "JNR Gothic";
+    font-weight: 400;
+}
+
+p{
+    font-family: "JNR Gothic";
+    font-weight: 400;
+    margin: 0;
+}
+
+h2{
+    margin: 0;
+}
+
+.title-Kana{
+    width: 100%;
+    font-size: 8pt;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+span{
+    white-space: nowrap;
+    transform-origin: center;
+}
+
+.title-English{
+    width: 100%;
+    height: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 8pt;
+    color: white;
+    background-color: #e66700;
+}
+
+#Sign-outer,#settings{
+    width: fit-content;
+    border-radius: 10px;
+    border: 1px black solid;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#Sign{
+    position: relative;
+    color: #252525;
+    width: 730px;
+    height: 285px;
+    background-color: #ffffff;
+    border: 1px black solid;
+}
+
+#Sign img{
+    position: relative;
+    top:35px;
+    left:25px;
+    width: 70px;
+}
+
+.One #Numbering{
+    position: absolute;
+    top: 85px;
+    left:635px;
+    background-color: #e66700;
+    width: 80px;
+    height: 80px;
+    align-items: center;
+}
+.Two #Numbering{
+    position: absolute;
+    top: 85px;
+    left:635px;
+    background-color: #e66700;
+    width: 80px;
+    height: 80px;
+    align-items: center;
+}
+
+
+.Two #Numbering2{
+    position: absolute;
+    top: 85px;
+    left:550px;
+    background-color: #e66700;
+    width: 80px;
+    height: 80px;
+    align-items: center;
+}
+
+.One #Numbering2{
+    display: none;
+}
+
+.Zero #Numbering{
+    display: none;
+}
+
+.Zero #Numbering2{
+    display: none;
+}
+
+
+
+.Number-relate{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.Line-Letter{
+    position: relative;
+    top: -5px;
+    color: #ffffff;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 23pt;
+}
+
+.Line-Number{
+    position: relative;
+    left: 0;
+    top: -8px;
+    font-size: 40pt;
+    display: block;
+    text-align: center;
+}
+
+.Number-inner{
+    position: absolute;
+    top: 28px;
+    left: 4px;
+    background-color: #ffffff;
+    width: 72px;
+    height: 48px;
+    justify-content: center;
+}
+
+#Ekimei-Kana{
+    position: absolute;
+    display: inline-block;
+    top:30px;
+    left:110px;
+    width: 520px;
+    transform: scale(1,1);
+    text-align: center;
+    font-size: 70pt;
+    transform-origin: left;
+}
+
+.virtial{
+    position: absolute;
+    visibility: hidden;
+}
+
+#Ekimei-Kana-virtial{
+    font-size: 70pt;
+}
+#Ekimei-Kanji-virtial{
+    font-size: 30pt;
+}
+
+#Ekimei-Kanji{
+    position: absolute;
+    top:125px;
+    left: 120px;
+    width: 500px;
+    font-size: 30pt;
+    text-align-last: center;
+    letter-spacing: 5px;
+}
+
+#Ekimei-Line{
+    background-color: #e66700;
+    position: absolute;
+    top:170px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+}
+
+#Ekimei-English{
+    position: absolute;
+    top: -3px;
+    width: 100%;
+    font-size: 24pt;
+    color: #ffffff;
+    text-align: center;
+    transform-origin: left;
+}
+
+#Ekimei-English-virtial{
+    visibility: hidden;
+    font-size: 24pt;
+    color: #ffffff;
+}
+
+.Johoku #Jouhoku-Line{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top:25px;
+    background-color: #ffffff;
+}
+
+.central #Johoku-Line{
+    display: none;
+}
+
+.Johoku #Middle-Line{
+    position: absolute;
+    background-color: #e66700;
+    top: 0;
+    left: 285px;
+    width: 160px;
+    height: 100%;
+}
+
+.central #Middle-Line{
+    display: none;
+}
+
+#Eki-Location{
+    position: absolute;
+    top: 220px;
+    left: 195px;
+    width: 340px;
+    text-align: center;
+    font-size: 20pt;
+    transform-origin: left;
+}
+
+#Eki-Location-virtial{
+    font-size: 20pt;
+}
+
+.One #Before-Eki{
+    position: absolute;
+    top:220px;
+    left: 35px;
+    font-size: 20pt;
+    transform-origin: left;
+}
+
+.Two #Before-Eki{
+    position: absolute;
+    top:215px;
+    left: 30px;
+    font-size: 20pt;
+    transform-origin: left;
+}
+
+.One #Before-Eki-English{
+    position: absolute;
+    top:250px;
+    left: 35px;
+    font-size: 15pt;
+    transform-origin: left;
+}
+
+.Two #Before-Eki-English{
+    position: absolute;
+    top:220px;
+    left: 145px;
+    font-size: 15pt;
+    transform-origin: left;
+}
+
+.One #Before-Eki-2nd{
+    display: none;
+}
+
+.Two #Before-Eki-2nd{
+    position: absolute;
+    top:250px;
+    left: 30px;
+    font-size: 20pt;
+    transform-origin: left;
+}
+
+.One #Before-Eki-English-2nd{
+    display: none;
+}
+
+.Two #Before-Eki-English-2nd{
+    position: absolute;
+    top:255px;
+    left: 145px;
+    font-size: 15pt;
+    transform-origin: left;
+}
+
+
+.One #After-Eki{
+    position: absolute;
+    transform: scale(1,1);
+    transform-origin: left;
+    top:220px;
+    left: 570px;
+    font-size: 20pt;
+    transform-origin: left;
+}
+
+.Two #After-Eki{
+    text-align: right;
+    position: absolute;
+    transform: scale(1,1);
+    transform-origin: left;
+    top:215px;
+    right:30px;
+    font-size: 20pt;
+    transform-origin: right;
+}
+
+.One #After-Eki-English{
+    position: absolute;
+    top:250px;
+    left: 570px;
+    font-size: 15pt;
+    transform-origin: left;
+}
+
+.Two #After-Eki-English{
+    position: absolute;
+    top:220px;
+    right: 145px;
+    font-size: 15pt;
+    transform-origin: right;
+}
+
+.One #After-Eki-2nd{
+    display: none;
+}
+
+.Two #After-Eki-2nd{
+    position: absolute;
+    top:250px;
+    right: 30px;
+    font-size: 20pt;
+    transform-origin: right;
+}
+
+.One #After-Eki-English-2nd{
+    display: none;
+}
+
+.Two #After-Eki-English-2nd{
+    position: absolute;
+    top:255px;
+    right: 145px;
+    font-size: 15pt;
+    transform-origin: right;
+}
+
+.English{
+    font-family: "Inter";
+    font-weight: 600;
+}
+
+.JNR{
+    font-family: "JNR Gothic";
+    font-weight: 400;
+}
+
+.left{
+    display: inline-block;
+    width: 150px;
+    font-size: 12pt;
+    margin: 0;
+    vertical-align: top;
+}
+
+.right{
+    display: inline-block;
+    width: 120px;
+    font-size: 12pt;
+    margin: 0;
+    vertical-align: top;
+}
+
+input{
+    margin: auto;
+    position: relative;
+    vertical-align: top;
+    height: 12pt;
+    font-size: 12pt;
+    margin-left: 5px;
+}
+
+input[type="checkbox"]{
+    height: 18pt;
+    margin-left: 0;
+}
+
+input[type="color"]{
+    height: 30px;
+    width: 80px;
+    margin-left: -3px;
+    border: none;
+    background:none;
+}
+
+.settings-input{
+    margin: auto;
+    vertical-align: top;
+}
+
+.One#left-2{
+    display: none;
+}
+
+.One#right-2{
+    display: none;
+}
+
+.settings-box{
+    margin-top: 5px;
+    display: flex;
+    width: fit-content;
+}
+
+.settitngs-numbering p{
+    margin-bottom: 5px;
+}
+
+.short{
+    width: 30px;
+    margin-left:0;
+}
+
+.settitngs-numbering{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.settitngs-numbering:first-child{
+    margin-left: 0;
+}
+
+.colors{
+    display: flex;
+}
+
+#default-colors1,#default-colors2{
+    width: 150px;
+}
+
+#default-colors1 option,#default-colors2 option{
+    color: #ffffff;
+    transition: 0.2s ease;
+}
+
+select,
+::picker(select) {
+  appearance: base-select;
+}
+
+button {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12pt;
+    padding: 5px 5px;
+    width: 200px;
+    box-shadow: 0 10px 10px 0 #000000a0;
+    border: #000000 1px solid;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: all 0.1s ease;
+}
+
+button:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 18px 10px 0 #000000a0;
+}
+
+button:active{
+    transform: translateY(8px);
+    box-shadow: 0 2px 10px 0 #000000a0;
+}
+
+#default-colors1 option:nth-child(1),#default-colors2 option:nth-child(1){background-color: #f47920;}
+#default-colors1 option:nth-child(2),#default-colors2 option:nth-child(2){background-color: #477543;}
+#default-colors1 option:nth-child(3),#default-colors2 option:nth-child(3){background-color: #773C97;}
+#default-colors1 option:nth-child(4),#default-colors2 option:nth-child(4){background-color: #6fa3d7;}
+#default-colors1 option:nth-child(5),#default-colors2 option:nth-child(5){background-color: #8c5a38;}
+#default-colors1 option:nth-child(6),#default-colors2 option:nth-child(6){background-color: #327198;}
+#default-colors1 option:nth-child(7),#default-colors2 option:nth-child(7){background-color: #9e1813;}
+#default-colors1 option:nth-child(8),#default-colors2 option:nth-child(8){background-color: #c8ba45;}
+#default-colors1 option:nth-child(9),#default-colors2 option:nth-child(9){background-color: #16b68f;}
+#default-colors1 option:nth-child(10),#default-colors2 option:nth-child(10){background-color:#ffffff;color: #000000;}
+
+#default-colors1 option:hover,
+#default-colors1 option:focus,
+#default-colors2 option:hover,
+#default-colors2 option:focus{
+    filter: brightness(120%);
+    font-size: 15pt;
+    overflow: hidden;
+}
+
+hr{
+    margin: 3px;
+}
